@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Sportz Wiz - NBA</title>
+    <link rel="icon" href="images/SportzWiz.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <header>
+            <h1><img src="images/SportzWiz.png" alt="Bet Genie Icon" class="title-icon"> Sportz Wiz <img src="images/NBA2.png" alt="NBA Logo" class="NBA-header"></h1>
+        </header>
+        <!-- Parent container to seperate buttons and stat display-->
+        <div class ="container">
+            <div class="options-container">
+                <div class = "row">
+                    <div class="search-box-main">
+                        <label for="player-search">Search for a player:</label>
+                        <input type="text" id="player-search" name="player-search" autocomplete="off">
+                        <div id="suggestions" class="suggestions"></div>
+                    </div>
+                </div>
+
+                <div class = "row">
+                    <h2>WHILE PLAYING AT:</h2>
+                    <!-- Location Button Group -->
+                    <div class="location-button-group">
+                        <label class="radio-container">
+                            <input type="radio" name="location-option" id="home" class="radio-input">
+                            <span class="radio-circle"></span>
+                            Home
+                        </label>
+
+                        <label class="radio-container">
+                            <input type="radio" name="location-option" id="away" class="radio-input">
+                            <span class="radio-circle"></span>
+                            Away
+                        </label>
+
+                        <label class="radio-container">
+                            <input type="radio" name="location-option" id="all" class="radio-input" checked>
+                            <span class="radio-circle"></span>
+                            All
+                        </label>
+                    </div>
+                </div>
+
+                <div class = "row">
+                    <h2>WHILE PLAYING AGAINST:</h2>
+                    <!-- Against Button Group -->
+                    <div class="against-button-group">
+                        <label class="radio-container">
+                            <input type="radio" name="against-option" id="against-choice" class="radio-input">
+                            <span class="radio-circle"></span>
+                            <div class="search-box">
+                                <label for="team-search-against">Choose Team:</label>
+                                <input type="text" id="team-search-against" name="team-search-against" autocomplete="off">
+                                <div id="suggestions-against" class="suggestions"></div>
+                            </div>
+                        </label>
+
+                        <label class="radio-container">
+                            <input type="radio" name="against-option" id="against-all" class="radio-input" checked>
+                            <span class="radio-circle"></span>
+                            All
+                        </label>
+                    </div>
+                </div>    
+
+                <div class = "row">
+                    <h2>WHILE PLAYING WITH:</h2>
+                    <!-- With Button Group -->
+                    <div class="with-button-group">
+                        <label class="radio-container">
+                            <input type="radio" name="with-option" id="with-choice" class="radio-input">
+                            <span class="radio-circle"></span>
+                            <div class="search-box">
+                                <label for="team-search-with">Choose Team:</label>
+                                <input type="text" id="team-search-with" name="team-search-with" autocomplete="off">
+                                <div id="suggestions-with" class="suggestions"></div>
+                            </div>
+                        </label>
+
+                        <label class="radio-container">
+                            <input type="radio" name="with-option" id="with-all" class="radio-input" checked>
+                            <span class="radio-circle"></span>
+                            All
+                        </label>
+                    </div>
+                </div>     
+
+                <div class = "row">
+                    <!-- Season Button Group -->
+                    <h2>PART OF SEASON:</h2>
+                    <div class="season-button-group">
+                        <label class="radio-container">
+                            <input type="radio" name="season-option" id="regular-season" class="radio-input">
+                            <span class="radio-circle"></span>
+                            Regular Season
+                        </label>
+
+                        <label class="radio-container">
+                            <input type="radio" name="season-option" id="playoffs" class="radio-input">
+                            <span class="radio-circle"></span>
+                            Playoffs
+                        </label>
+
+                        <label class="radio-container">
+                            <input type="radio" name="season-option" id="season-all" class="radio-input" checked>
+                            <span class="radio-circle"></span>
+                            All
+                        </label>
+                    </div>
+                </div>
+                
+                <div class = "row">
+                    <!-- Games Button Group -->
+                    <h2>SELECT GAMES:</h2>
+                    <div class="games-button-group">
+                        <label class="radio-container">
+                            <input type="radio" name="games-option" id="last-season" class="radio-input" checked>
+                            <span class="radio-circle"></span>
+                            Last Season
+                        </label>
+
+                        <label class="radio-container">
+                            <input type="radio" name="games-option" id="last-games" class="radio-input">
+                            <span class="radio-circle"></span>
+                            <div class="search-box">
+                                <label for="games-input">Last:</label>
+                                <input type="number" id="games-input" name="games-input" autocomplete="off" min="1">
+                            </div>
+                            Games
+                        </label>
+
+                        <label class="radio-container">
+                            <input type="radio" name="games-option" id="date-range" class="radio-input">
+                            <span class="radio-circle"></span>
+                            <div class="search-box">
+                                <label for="start-date">Start Date:</label>
+                                <input type="date" id="start-date" name="start-date">
+                            </div>
+                            <div class="search-box">
+                                <label for="end-date">End Date:</label>
+                                <input type="date" id="end-date" name="end-date">
+                            </div>
+                        </label>
+
+                        <label class="radio-container">
+                            <input type="radio" name="games-option" id="games-all" class="radio-input" checked>
+                            <span class="radio-circle"></span>
+                            All
+                        </label>
+                    </div>
+                </div>    
+                <!-- Button to make search -->
+                <div class = "row">
+                    <div class="submit-button">
+                        <button class="get-stats-button">
+                            SEARCH
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Container for stats to be shown -->
+            <div display-container>
+                <div id="stats-display">
+                    <h3>Player Stats:</h3>
+                    <ul id="stats-list"></ul>
+                </div>
+            </div>
+        </div>
+
+        <script src="statSorter.js"></script>
+    </body>
+</html>

@@ -1,0 +1,270 @@
+/* Reset Elements */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+/* Header Styling */
+header {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #cc59e9;
+}
+/* Menu Style */
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/* Header Styling */
+h1 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 60px;
+    color: #ffffff;
+}
+h2 {
+    font-family: 'Cinzel Decorative', serif;
+    color: #a82e2e
+}
+h3 {
+    font-family: 'Cinzel Decorative', serif;
+    color: #e85530
+}
+/* Image Styling*/
+.title-icon {
+    width: 120px;  /* Adjust the size as needed */
+    height: 120px;
+    margin-right: 8px;  /* Space between the icon and text */
+    vertical-align: middle;
+}
+.league-box {
+    display: block;
+    width: 240px;
+    height: 240px;
+    margin: 10px;
+}
+.league-box img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.league-box2 {
+    display: block;
+    width: 240px;
+    height: 240px;
+    margin: 10px;
+}
+.league-box2 img {
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+/* Hover Styling */
+.league-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.league-box2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.NBA-header {
+    height: 120px;
+    width: auto;
+    vertical-align: middle;  /* Align the icon with the text */
+}
+
+.wiz-image {
+    width: 240px;
+    height: auto;
+    margin: 55px;
+    margin-top: 10px;
+}
+
+/* Parent Container */
+.container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the contents of the container */
+}
+
+/* Options content on the left */
+.options-container {
+    max-width: 50%; /* Limit width of the main content */
+    padding-right: 20px; /* Padding to separate from player stats */
+}
+
+/* Player stats on the right */
+.display-container {
+    max-width: 50%; /* Limit width of the player stats */
+    padding: 20px; /* Padding inside the player stats section */
+}
+
+/* Style Rows */
+.row {
+    width: 100%;
+    margin: 10px 0;
+    text-align: left;
+    justify-content: center; 
+    align-items: center;
+}
+
+/* Button Groups */
+.location-button-group,
+.against-button-group,
+.with-button-group,
+.season-button-group,
+.games-button-group {
+    width: 100%;
+    align-items: center;
+}
+
+
+/* Button Styling */
+.radio-container {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 12px;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 4px 20px;
+    background-color: #ffffff;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.radio-container:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.02);
+}
+.radio-container:active {
+    background-color: #e0e0e0;
+    transform: scale(1.01);
+}
+
+/* Main Search Box*/
+.search-box-main {
+    align-items: center; 
+    gap: 1px;
+    font-family: 'Cinzel Decorative', serif;
+    color: #431f1f;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.radio-container {
+    display: flex;
+    align-items: left;
+}
+
+.get-stats-button {
+    background-color: #cc59e9;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px; /* Font size */
+    font-family: 'Cinzel Decorative', serif;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Button hover and active states */
+.get-stats-button:hover {
+    background-color: #a947d0;
+    transform: scale(1.05);
+}
+
+.get-stats-button:active {
+    background-color: #9a3fb0;
+    transform: scale(1.02);
+}
+
+/* Button Search Box */
+.search-box{
+    align-items: center; 
+    gap: 1px;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+/* Container for suggestion items */
+.suggestions {
+    position: relative;
+}
+
+/* Individual suggestion items */
+.suggestions div {
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #cc59e9;
+    border-radius: 5px;
+    padding: 10px; 
+    margin: 0;
+    width: calc(100% - 22px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+    transition: background-color 0.3s, transform 0.2s; 
+    z-index: 10; 
+    cursor: pointer;
+}
+
+/* Styling for suggestion items on hover */
+.suggestions div:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+/* Adjusting the position of suggestions */
+.suggestions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Styling for the container holding the stats display */
+.display-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the stats display section */
+#stats-display {
+    width: 100%;
+}
+
+/* Heading for player stats */
+#stats-display h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+/* Styling for the list of stats */
+#stats-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Individual stat items */
+#stats-list li {
+    font-size: 14px;
+    color: #c60000;
+    margin-bottom: 1px;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Remove the last border from the last item */
+#stats-list li:last-child {
+    border-bottom: none;
+}
